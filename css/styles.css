@@ -110,6 +110,8 @@ header, .navbar {
 }
 
 .carousel-item img {
-    filter: blur(3px);
-    filter: brightness(40%);
+    filter: blur(1px) brightness(40%);
 }
+
+/* Sobre a Empresa */
+
