@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    padding: 70px 0;
+    padding: 70px 0px;
 }
 
 p, li {
@@ -39,7 +39,9 @@ header, .navbar {
     color: black;
 }
 #navbar-links a {
-    color: black;
+    color: #333232;
+    font-weight: bold;
+    font-size: 19px;
 }
 #navbar-links a:hover {
     color: white;
@@ -56,6 +58,52 @@ header, .navbar {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem .9rem;
+    padding: 1rem 1.9rem;
 }
 
+/* Slider */
+
+.container-fluid {
+    padding: 0;
+}
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #fff;
+}
+
+.main-btn {
+    background-color: #F48C06;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+.main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #F48C06;
+}
+
+.carousel-indicators .active {
+    background-color: #F48C06;
+}
