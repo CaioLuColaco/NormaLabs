@@ -29,6 +29,7 @@ header, .navbar {
 
 #logo {
     width: 150px;
+    margin-left: 20px;
 }
 
 .navbar-brand {
@@ -106,4 +107,9 @@ header, .navbar {
 
 .carousel-indicators .active {
     background-color: #F48C06;
+}
+
+.carousel-item img {
+    filter: blur(3px);
+    filter: brightness(40%);
 }
