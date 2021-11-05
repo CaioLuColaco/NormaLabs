@@ -1,4 +1,9 @@
 /* Gerais */
+:root {
+    --color-highOrange: #F48C06;
+    --color-middleOrange: #FBA333;
+    --color-lowOrange: #F4C467;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -19,7 +24,7 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-    background: linear-gradient( .25turn, #F48C06, 55%,  #F4C467);
+    background: linear-gradient( .25turn, var(--color-highOrange), 55%,  var(--color-lowOrange));
 }
 
 #nav-container {
@@ -88,7 +93,7 @@ header, .navbar {
 }
 
 .main-btn {
-    background-color: #F48C06;
+    background-color: var(--color-highOrange);
     color: #FFF;
     text-transform: uppercase;
     width: 200px;
@@ -102,11 +107,11 @@ header, .navbar {
     text-decoration: none;
     color: #FFF;
     background-color: transparent;
-    border-color: #F48C06;
+    border-color: var(--color-highOrange);
 }
 
 .carousel-indicators .active {
-    background-color: #F48C06;
+    background-color: var(--color-highOrange);
 }
 
 .carousel-item img {
@@ -127,7 +132,7 @@ header, .navbar {
 }
 .main-title::after {
     content: "";
-    border-top: 2px solid #F48C06;
+    border-top: 2px solid var(--color-highOrange);
     width: 15%;
     position: absolute;
     top: 60px;
@@ -151,6 +156,33 @@ header, .navbar {
 }
 
 #about-list i {
-    color: #F48C06;
+    color: var(--color-highOrange);
     margin-right: 15px;
+    font-size: 16px;
+}
+
+/* Projects */
+
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i, .service-box h4 {
+    transition: .5s;
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.service-box h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h4 {
+    color: var(--color-highOrange);
 }
