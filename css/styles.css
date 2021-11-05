@@ -204,3 +204,9 @@ header, .navbar {
     font-size: 26px;
     margin-top: 20px;
 }
+
+/* Equipe */
+
+.card-body {
+    text-align: center;
+}
