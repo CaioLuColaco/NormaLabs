@@ -104,6 +104,7 @@ $(document).ready(function() {
     // Parallax
     setTimeout(function() {
         $('#data-area').parallax({imageSrc : '/pics/paralax4.jpeg'})
+        $('#apply-area').parallax({imageSrc : '/pics/fundoCircuito5.png'})
     }, 250)
     
 

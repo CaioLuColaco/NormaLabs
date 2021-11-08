@@ -210,3 +210,52 @@ header, .navbar {
 .card-body {
     text-align: center;
 }
+
+/* Solicitação de melhoria */
+
+#apply-area {
+    height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row {
+    height: 100%;
+}
+
+#apply-area .apply-box {
+    text-align: center;
+    padding: 70px 50px;
+}
+
+#company-img {
+    background-image: url(/pics/predioNormatel.png);
+    background-size: cover;
+    height: 100%;
+}
+#pattern-img h4, #pattern-img p {
+    color: #FFF;
+}
+
+#pattern-img h4 {
+    margin-top: 8%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#pattern-img p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#apply-btn {
+    display: block;
+    height: auto;
+    margin: 57px auto auto auto;
+    background-color: transparent;
+    border-color: #FFF;
+}
+
+#apply-btn:hover {
+    border-color: var(--color-highOrange);
+
+}
