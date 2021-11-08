@@ -211,6 +211,23 @@ header, .navbar {
     text-align: center;
 }
 
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
 /* Solicitação de melhoria */
 
 #apply-area {
@@ -257,5 +274,4 @@ header, .navbar {
 
 #apply-btn:hover {
     border-color: var(--color-highOrange);
-
 }
