@@ -105,7 +105,16 @@ $(document).ready(function() {
     setTimeout(function() {
         $('#data-area').parallax({imageSrc : '/pics/paralax4.jpeg'})
         $('#apply-area').parallax({imageSrc : '/pics/fundoCircuito5.png'})
-    }, 250)
+    }, 250);
+
+    // Filter of Teams-area
+    $('.filter-btn').on('click', function() {
+        let type = $(this).attr('id');
+        let members = $('.card');
+
+        $('.main-btn').removeClass('active');
+        $(this).addClass('active');
+    });
     
 
 });
