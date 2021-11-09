@@ -110,11 +110,35 @@ $(document).ready(function() {
     // Filter of Teams-area
     $('.filter-btn').on('click', function() {
         let type = $(this).attr('id');
-        let members = $('.card');
+        let members = $('.team-box');
 
         $('.main-btn').removeClass('active');
         $(this).addClass('active');
+
+        if(type == 'prog-btn') {
+            eachBoxes('prog', members)
+        } else if(type == 'lid-btn') {
+            eachBoxes('lid', members)
+        } else if (type == 'anal-btn') {
+            eachBoxes('anal', members)
+        } else {
+            eachBoxes('all', members)
+        }
     });
     
+    // Função para o filtro do Teams-area
+    function eachBoxes(type, members) {
+        if(type == 'all') {
+            $(members).fadeIn();
+        } else {
+            $(members).each(function() {
+                if(!$(this).hasClass(type)) {
+                    $(this).fadeOut('slow');
+                } else {
+                    $(this).fadeIn();
+                }
+            });
+        }
+    }
 
 });
