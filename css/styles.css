@@ -218,7 +218,7 @@ header, .navbar {
 
 .filter-btn {
     color: #444;
-    border: 1px solid #444;
+    border: 1px solid var(--color-highOrange);
     background-color: transparent;
     text-transform: none;
     margin: 0 15px;
@@ -228,6 +228,13 @@ header, .navbar {
     line-height: 40px;
     padding: 0 20px;
 }
+
+#team-area .filter-btn.active, #team-area .filter-btn:hover {
+    color: #FFF;
+    background-color: var(--color-middleOrange);
+    border-color: var(--color-highOrange);
+}
+
 /* Solicitação de melhoria */
 
 #apply-area {
