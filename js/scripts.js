@@ -140,7 +140,7 @@ $(document).ready(function() {
                 } else {
                     $(this).fadeIn();
                 }
-                setTimeout(()=> $('#team-area>.container>.row').append('<div class="emptyDiv" style="height: 307px; width: 240px"></div>') , 1000);
+                setTimeout(()=> $('#team-area>.container>.row').append('<div class="emptyDiv" style="height: 307px; width: 240px"></div>') , 500);
             });
         }
     }
