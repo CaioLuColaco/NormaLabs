@@ -112,15 +112,17 @@ $(document).ready(function() {
         let type = $(this).attr('id');
         let members = $('.team-box');
 
+        $('.emptyDiv').remove();
+
         $('.main-btn').removeClass('active');
         $(this).addClass('active');
 
         if(type == 'prog-btn') {
-            eachBoxes('prog', members)
+            eachBoxes('prog', members);
         } else if(type == 'lid-btn') {
-            eachBoxes('lid', members)
-        } else if (type == 'anal-btn') {
-            eachBoxes('anal', members)
+            eachBoxes('lid', members);
+        } else if (type == 'anali-btn') {
+            eachBoxes('anali', members)
         } else {
             eachBoxes('all', members)
         }
@@ -134,9 +136,11 @@ $(document).ready(function() {
             $(members).each(function() {
                 if(!$(this).hasClass(type)) {
                     $(this).fadeOut('slow');
+
                 } else {
                     $(this).fadeIn();
                 }
+                setTimeout(()=> $('#team-area>.container>.row').append('<div class="emptyDiv" style="height: 307px; width: 240px"></div>') , 1000);
             });
         }
     }
