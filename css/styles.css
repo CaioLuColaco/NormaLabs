@@ -282,3 +282,86 @@ header, .navbar {
 #apply-btn:hover {
     border-color: var(--color-highOrange);
 }
+
+/* news letter */
+
+#news-area {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#news-area p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#email-input {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid var(--color-highOrange);
+    width: 40%;
+    height: 40px;
+    display: inline;
+    box-sizing: border-box;
+}
+
+#news-btn {
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid var(--color-highOrange);
+    background-color: var(--color-highOrange);
+    color: white;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -130px;
+    transition: .5s;
+    position: absolute;
+    cursor: pointer;
+}
+
+#news-btn:hover {
+    color: var(--color-highOrange);
+    background-color: white;
+}
+
+/* Call to action */
+
+#call-area {
+    background-color: var(--color-highOrange);
+    text-transform: uppercase;
+}
+
+#call-area .container {
+    padding: 40px 100px;
+}
+
+#call-area .row {
+    display: block;
+    text-align: center;
+}
+
+#call-area p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: inline;
+    height: 60px;
+    line-height: 60px;
+}
+
+#call-area #call-btn {
+    background-color: white;
+    color: var(--color-highOrange);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    width: auto;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
