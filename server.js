@@ -5,7 +5,7 @@ const nunjucks = require("nunjucks")
 server.set("view engine", "html")
 
 server.use(express.static('views'))
-server.use(express.static('public'))
+server.use(express.static('views/public'))
 
 nunjucks.configure("views", {
     express: server
