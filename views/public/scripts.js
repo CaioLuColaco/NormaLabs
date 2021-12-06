@@ -180,5 +180,22 @@ $(document).ready(function() {
         }, 1500);
     });
 
-    
+    let otherBtn = $('.other-btn');
+
+    $(otherBtn).click(function() {
+        let btnId = $(this).attr('id');
+
+        if(btnId == 'about-carousel') {
+            scrollTo = aboutSection;
+        } else if(btnId == 'projects-carousel') {
+            scrollTo = projectsSection;
+        } else if(btnId == 'team-carousel') {
+            scrollTo = teamsSection;
+        }
+
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(scrollTo).offset().top - 70
+        }, 1500);
+    });
+
 });
