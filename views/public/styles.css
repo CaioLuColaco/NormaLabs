@@ -378,6 +378,10 @@ header, .navbar {
     cursor: pointer;
 }
 
+#tag_email a {
+    color: white;
+}
+
 /* FOOTER */
 
 #contact-area {
