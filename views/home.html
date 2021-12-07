@@ -47,7 +47,7 @@
                         <a class="nav-item nav-link" id="services-menu">Projetos</a>
                         <a class="nav-item nav-link" id="team-menu">Equipe</a>
                         <a class="nav-item nav-link" id="news-menu">Orçamento</a>
-                        <a class="nav-item nav-link" id="call-menu">Contato</a>
+                        <a class="nav-item nav-link" id="call-menu">Contatos</a>
                     </div>
                 </div>
                 
@@ -349,8 +349,8 @@
             <div id="call-area">
                 <div class="container">
                     <div class="row">
-                        <p>Deseja fazer um orçamento sem compromisso?</p>
-                        <a href="mailto:normalabs@normatel.com.br" target="_blank" class="main-btn" id="call-btn">Orçar</a>
+                        <p>Deseja fazer uma solicitação de melhoria?</p>
+                        <a href="mailto:normalabs@normatel.com.br" target="_blank" class="main-btn" id="call-btn">Solicitar</a>
                     </div>
                 </div>
             </div>
@@ -381,10 +381,12 @@
                         <p>Ou nos deixe uma mensagem:</p>
                     </div>
                     <div class="col-md-6" id="contact-form">
-                        <form action="">
+                        <form method="POST" action="/">
                             <input type="email" class="form-control" placeholder="E-mail" name="email">
-                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
-                            <textarea class="form-control" placeholder="Sua mensagem..." name="message" rows="3"></textarea>
+                            <input type="text" class="form-control" placeholder="Seu nome" name="name">
+                            <input type="text" class="form-control" placeholder="Assunto" name="assunto">
+                            <input type="text" class="form-control" placeholder="Seu setor" name="setor">
+                            <textarea class="form-control" placeholder="Sua mensagem..." name="menssagem" rows="6"></textarea>
                             <input type="submit" class="main-btn" value="Enviar">
                         </form>
                     </div>
