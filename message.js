@@ -10,9 +10,20 @@ exports.post = function(req, res) {
         }
     }
 
-    req.body.created_at = Date.now()
+    let { email, name, assunto, setor, menssagem } = req.body
 
-    data.message.push(req.body)
+    const created_at = Date.now()
+    const id = Number(data.message.length + 1)
+
+    data.message.push({
+        id,
+        name,
+        setor,
+        email,
+        assunto,
+        menssagem,
+        created_at
+    })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
         if (err) return res.send("Write file error")
