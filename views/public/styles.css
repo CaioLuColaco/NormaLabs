@@ -75,6 +75,7 @@ header, .navbar {
 .container-fluid {
     padding: 0;
 }
+
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
     height: 90vh;
 }
@@ -538,6 +539,11 @@ header, .navbar {
     /* slider */
     #mainSlider {
         margin-top: 75px;
+        max-height: 30vh;
+    }
+
+    .carousel-item img {
+        max-height: 30vh;
     }
 
     #mainSlider .carousel-caption {
@@ -598,7 +604,7 @@ header, .navbar {
 
     /* Solicitation */
     #call-area p, #call-area #call-btn {
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 0;
         margin: 0;
         width: 50%;
