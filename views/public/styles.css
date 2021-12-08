@@ -214,7 +214,7 @@ header, .navbar {
     color: white;
     text-align: center;
     font-size: 26px;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 /* Equipe */
@@ -511,17 +511,6 @@ header, .navbar {
     }
 
     /* news */
-
-    #news-area p {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #email-input {
-        width: 70%;
-    }
-
     #call-area {
         margin-top: 30px;
     }
@@ -537,5 +526,87 @@ header, .navbar {
     /* update */
     #apply-btn {
         margin-top: 30px;
+    }
+
+    /* call */
+    #call-area {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 425px) {
+    /* slider */
+    #mainSlider {
+        margin-top: 75px;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p {
+        display: none;
+    }
+
+    .carousel-caption .main-btn {
+        font-size: 14px;
+    }
+
+    /* About */
+    .main-title {
+        font-size: 30px;
+    }
+
+    #about-area img {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* data */
+    .circle-box {
+        width: 50%;
+    }
+
+    /* team */
+    #team-area .col-md-3 {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* apply */
+    #apply-area {
+        height: auto;
+    }
+
+    #company-img {
+        display: none;
+    }
+
+    /* Filter */
+    #portfolio-area, .filter-btn {
+        margin-bottom: 20px;
+    }
+
+    .project-box {
+        width: 50%;
+    }
+
+    /* Solicitation */
+    #call-area p, #call-area #call-btn {
+        font-size: 14px;
+        letter-spacing: 0;
+        margin: 0;
+        width: 50%;
+    }
+
+    /* Contact */
+    .contact-box {
+        border: none;
+        margin-bottom: 0;
     }
 }
