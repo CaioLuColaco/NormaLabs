@@ -155,6 +155,7 @@ $(document).ready(function() {
     let teamsSection = $('#team-area');
     let budgetSection = $('#news-area');
     let contactSection = $('#contact-area');
+    let solicitationSection = $('#call-area');
     
     let scrollTo = '';
 
@@ -173,6 +174,8 @@ $(document).ready(function() {
             scrollTo = budgetSection;
         } else if(btnId == 'call-menu') {
             scrollTo = contactSection;
+        } else if(btnId == 'solicitation-menu') {
+            scrollTo = solicitationSection;
         }
 
         $([document.documentElement, document.body]).animate({
