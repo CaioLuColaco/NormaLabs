@@ -155,7 +155,7 @@ $(document).ready(function() {
     let teamsSection = $('#team-area');
     let budgetSection = $('#news-area');
     let contactSection = $('#contact-area');
-    let solicitationSection = $('#call-area');
+    let solicitationSection = $('#apply-area');
     
     let scrollTo = '';
 
